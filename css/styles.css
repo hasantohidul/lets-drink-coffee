@@ -1,3 +1,18 @@
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-background: #333;
+    --button-background: #333;
+}
+
+body.dark-mode {
+    --background-color: #333;
+    --text-color: #f4f4f4;
+    --header-background: #222;
+    --button-background: #555;
+}
+
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -7,15 +22,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333; 
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease;
 }
 
 header {
-    background: #333;
+    background: var(--header-background);
     color: #fff;
     padding: 1rem;
     text-align: center;
+    transition: background-color 0.5s ease;
 }
 
 nav ul {
@@ -125,7 +142,7 @@ input[type="text"]:focus, input[type="email"]:focus {
 
 input[type="submit"] {
     padding: 10px;
-    background-color: #333;
+    background-color: var(--button-background);
     color: #fff;
     border: none;
     cursor: pointer;
