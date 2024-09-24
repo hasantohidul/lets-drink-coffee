@@ -133,3 +133,40 @@ input[type="submit"]:hover {
 html {
     scroll-behavior: smooth;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Table Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        width: 45%;
+        margin: 10px 0;
+    }
+}
