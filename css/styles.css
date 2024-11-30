@@ -168,7 +168,7 @@ body.dark-mode .menu-item {
 
 .menu-item h3,
 .menu-item p {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
   transform: translateY(10px);
   opacity: 0;
 }
